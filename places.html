@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_421ed9449c1240bc817b20f2808fdb43 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://kit.fontawesome.com/8af7b0b0c7.js"></script>
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_421ed9449c1240bc817b20f2808fdb43" ></div>
+        
+</body>
+<script>    
+    
+            var map_421ed9449c1240bc817b20f2808fdb43 = L.map(
+                "map_421ed9449c1240bc817b20f2808fdb43",
+                {
+                    center: [48.487, 19.7791],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_73f08c90b1f64b8f96be48a01fc9be9e = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_421ed9449c1240bc817b20f2808fdb43);
+        
+    
+            var marker_cluster_b9b8724d7cfe431c890db441da6c187f = L.markerClusterGroup(
+                {}
+            );
+            map_421ed9449c1240bc817b20f2808fdb43.addLayer(marker_cluster_b9b8724d7cfe431c890db441da6c187f);
+        
+    
+
+        function geo_json_ecc75c4fb9f84bb791eb37699823cdf1_onEachFeature(feature, layer) {
+            layer.on({
+                click: function(e) {
+                    
+                    layer.bindPopup(feature.properties.popupContent);
+                    
+                }
+            });
+        };
+        var geo_json_ecc75c4fb9f84bb791eb37699823cdf1 = L.geoJson(null, {
+            
+                pointToLayer: function (feature, latlng) {
+                var opts = L.AwesomeMarkers.icon({'markerColor': 'gray', 'iconColor': 'white', 'icon': ' fa-fort-awesome-alt', 'prefix': 'fab', 'extraClasses': 'fa-rotate-0'});
+                
+                return L.marker(latlng, {icon:opts})
+                },
+            
+                onEachFeature: geo_json_ecc75c4fb9f84bb791eb37699823cdf1_onEachFeature,
+            
+        }).addTo(marker_cluster_b9b8724d7cfe431c890db441da6c187f);
+            geo_json_ecc75c4fb9f84bb791eb37699823cdf1.addData({"features": [{"geometry": {"coordinates": [20.77917, 48.99861], "type": "Point"}, "properties": {"description": "In the\u00a0\u00a0eastern horizon of Spi\u0161sk\u00e9 Podhradie towers the Spi\u0161 Castle. As a National Cultural Monument, Spi\u0161 Castle with its area of more than four ha, and partially in ruins, is one of the largest castle compounds in Central Europe. Spi\u0161 Castle was included in the UNESCO World Heritage List in 1993.", "gps": "48.99861, 20.77917", "how to go": "\u003ca type=\u0027button\u0027 href=\u0027geo:48.99861, 20.77917?q=48.99861, 20.77917\u0027 class=\u0027btn btn-success btn-sm ml-auto\u0027\u003eComo ir\u003c/a\u003e", "location": "Ko\u0161ick\u00fd kraj, okres Spi\u0161sk\u00e1 Nov\u00e1 Ves, \u017dehra", "name": "Spi\u0161sk\u00fd hrad Castle", "type": " Castle\n", "url_info": "\u003ca href=\u0027http://slovakia.travel/en/places-to-go/the-best-of-slovakia/spis-castle\u0027\u003eMais Info\u003c/a\u003e"}, "type": "Feature"}, {"geometry": {"coordinates": [19.35861, 49.26194], "type": "Point"}, "properties": {"description": "The most attractive tourist locality of the northern Slovakia is the Orava Castle lying on the river Orava near\r\n the village Oravsk\u00fd Podz\u00e1mok, below impressive cliffs. In 1370, it \r\nbecame a county castle and the seat of the Orava Castle estate, which \r\nincluded almost the whole region of Orava.", "gps": "49.26194, 19.35861", "how to go": "\u003ca type=\u0027button\u0027 href=\u0027geo:49.26194, 19.35861?q=49.26194, 19.35861\u0027 class=\u0027btn btn-success btn-sm ml-auto\u0027\u003eComo ir\u003c/a\u003e", "location": "\u017dilinsk\u00fd kraj, okres Doln\u00fd Kub\u00edn, Oravsk\u00fd Podz\u00e1mok", "name": "Oravsk\u00fd hrad Castle", "type": " Castle\n", "url_info": "\u003ca href=\u0027http://slovakia.travel/en/oravsky-hrad-castle\u0027\u003eMais Info\u003c/a\u003e"}, "type": "Feature"}, {"geometry": {"coordinates": [19.12778, 48.57306], "type": "Point"}, "properties": {"description": "The Zvolen Castle, which is located on the bank of the \r\nSlatina River, is the most distinctive feature and symbol of the Central\r\n Slovakian town of Zvolen. An armoured train\u00a0that reminds\u00a0the Slovak National Uprising is placed nearby the castle.", "gps": "48.57306, 19.12778", "how to go": "\u003ca type=\u0027button\u0027 href=\u0027geo:48.57306, 19.12778?q=48.57306, 19.12778\u0027 class=\u0027btn btn-success btn-sm ml-auto\u0027\u003eComo ir\u003c/a\u003e", "location": "Banskobystrick\u00fd kraj, okres Zvolen, Zvolen", "name": "Zvolen Castle", "type": " Castle\n", "url_info": "\u003ca href=\u0027http://slovakia.travel/en/zvolen-castle\u0027\u003eMais Info\u003c/a\u003e"}, "type": "Feature"}, {"geometry": {"coordinates": [18.57778, 48.78], "type": "Point"}, "properties": {"description": "The gem of Bojnice is the \u201dfairy-tale\u201d Bojnick\u00fd z\u00e1mok Castle, one of the most visited and most beautiful castles not only in Slovakia, but also in central Europe.", "gps": "48.78, 18.57778", "how to go": "\u003ca type=\u0027button\u0027 href=\u0027geo:48.78, 18.57778?q=48.78, 18.57778\u0027 class=\u0027btn btn-success btn-sm ml-auto\u0027\u003eComo ir\u003c/a\u003e", "location": "Tren\u010diansky kraj, okres Prievidza, Bojnice", "name": "Bojnice Castle", "type": " Castle\n", "url_info": "\u003ca href=\u0027http://slovakia.travel/en/bojnice-castle\u0027\u003eMais Info\u003c/a\u003e"}, "type": "Feature"}, {"geometry": {"coordinates": [16.97889, 48.17528], "type": "Point"}, "properties": {"description": "Dev\u00edn Castle standing on a massive rock hill above the confluence of the Danube and Morava is an unusually impressive landmark. It is part of the oldest history of Slovakia.", "gps": "48.17528, 16.97889", "how to go": "\u003ca type=\u0027button\u0027 href=\u0027geo:48.17528, 16.97889?q=48.17528, 16.97889\u0027 class=\u0027btn btn-success btn-sm ml-auto\u0027\u003eComo ir\u003c/a\u003e", "location": "Bratislavsk\u00fd kraj, Bratislava", "name": "Dev\u00edn Castle", "type": " Castle (Oldest Of Slovakia 868)\n", "url_info": "\u003ca href=\u0027http://slovakia.travel/en/devin-castle\u0027\u003eMais Info\u003c/a\u003e"}, "type": "Feature"}], "type": "FeatureCollection"});
+            
+            geo_json_ecc75c4fb9f84bb791eb37699823cdf1.addTo(marker_cluster_b9b8724d7cfe431c890db441da6c187f);
+            
+        
+    
+        
+        marker_cluster_b9b8724d7cfe431c890db441da6c187f
+        .bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["type", "name", "location", "gps", "description", "url_info", "how to go"];
+    let aliases = ["Tipo", "Nome", "Zona", "GPS", "Sobre", "URL", "Como ir"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    
+    return div
+    }
+    ,{"className": "foliumpopup"})
+                         
+    
+            var marker_cluster_da3496723cbb4fb89af84bc41f11e052 = L.markerClusterGroup(
+                {}
+            );
+            map_421ed9449c1240bc817b20f2808fdb43.addLayer(marker_cluster_da3496723cbb4fb89af84bc41f11e052);
+        
+    
+
+        function geo_json_b78ec9fd74264a258bbaac0fff1b9fa5_onEachFeature(feature, layer) {
+            layer.on({
+                click: function(e) {
+                    
+                    layer.bindPopup(feature.properties.popupContent);
+                    
+                }
+            });
+        };
+        var geo_json_b78ec9fd74264a258bbaac0fff1b9fa5 = L.geoJson(null, {
+            
+                pointToLayer: function (feature, latlng) {
+                var opts = L.AwesomeMarkers.icon({'markerColor': 'lightgreen', 'iconColor': 'white', 'icon': ' fa-hiking', 'prefix': 'fas', 'extraClasses': 'fa-rotate-0'});
+                
+                return L.marker(latlng, {icon:opts})
+                },
+            
+                onEachFeature: geo_json_b78ec9fd74264a258bbaac0fff1b9fa5_onEachFeature,
+            
+        }).addTo(marker_cluster_da3496723cbb4fb89af84bc41f11e052);
+            geo_json_b78ec9fd74264a258bbaac0fff1b9fa5.addData({"features": [{"geometry": {"coordinates": [20.42444, 48.92389], "type": "Point"}, "properties": {"description": "The Prielom Horn\u00e1du canyon is one of the biggest tourist attractions of the Slovensk\u00fd raj Mts. The narrow, 16 kilometre long canyon-like valley separates the marginal ridge culminating in the Tom\u00e1\u0161ovsk\u00fd v\u00fdh\u013ead view (667 m) from the mountain range.", "gps": "48.92389, 20.42444", "how to go": "\u003ca type=\u0027button\u0027 href=\u0027geo:48.92389, 20.42444?q=48.92389, 20.42444\u0027 class=\u0027btn btn-success btn-sm ml-auto\u0027\u003eComo ir\u003c/a\u003e", "location": "Ko\u0161ick\u00fd kraj, okres Spi\u0161sk\u00e1 Nov\u00e1 Ves, Spi\u0161sk\u00e9 Tom\u00e1\u0161ovce", "name": "The canyon Prielom Horn\u00e1du (Slovensk\u00fd raj)", "type": " Walk\n", "url_info": "\u003ca href=\u0027http://slovakia.travel/en/the-canyon-prielom-hornadu-slovensky-raj\u0027\u003eMais Info\u003c/a\u003e"}, "type": "Feature"}, {"geometry": {"coordinates": [20.46167, 48.94028], "type": "Point"}, "properties": {"description": "The National Park of Slovensk\u00fd raj situated in the eastern part of Slovakia contains one of the biggest ice caves in Europe and an attractive landscape of karstic plateaux, gorges, waterfalls and caves. The monuments that testify the oldest history of the region and the country are also here.", "gps": "48.94028, 20.46167", "how to go": "\u003ca type=\u0027button\u0027 href=\u0027geo:48.94028, 20.46167?q=48.94028, 20.46167\u0027 class=\u0027btn btn-success btn-sm ml-auto\u0027\u003eComo ir\u003c/a\u003e", "location": "Ko\u0161ick\u00fd kraj, okres Spi\u0161sk\u00e1 Nov\u00e1 Ves, Spi\u0161sk\u00e9 Tom\u00e1\u0161ovce", "name": "National Park of Slovensk\u00fd raj", "type": " Walk\n", "url_info": "\u003ca href=\u0027http://slovakia.travel/en/national-park-of-slovensky-raj\u0027\u003eMais Info\u003c/a\u003e"}, "type": "Feature"}, {"geometry": {"coordinates": [20.41833, 49.40528], "type": "Point"}, "properties": {"description": "A trip to the Prielom Dunajca (the canyon of the Dunajec river) is one of the most beautiful in Slovakia. It starts in \u010cerven\u00fd Kl\u00e1\u0161tor, continues on to the mouth of the Lesnick\u00fd potok brook and further along the right bank of the meandering Dunajec.", "gps": "49.40528, 20.41833", "how to go": "\u003ca type=\u0027button\u0027 href=\u0027geo:49.40528, 20.41833?q=49.40528, 20.41833\u0027 class=\u0027btn btn-success btn-sm ml-auto\u0027\u003eComo ir\u003c/a\u003e", "location": "Pre\u0161ovsk\u00fd kraj, okres Ke\u017emarok, \u010cerven\u00fd Kl\u00e1\u0161tor", "name": "The canyon Prielom Dunajca (Pieniny Mts.)", "type": " Walk\n", "url_info": "\u003ca href=\u0027http://slovakia.travel/en/the-canyon-prielom-dunajca-pieniny-mts\u0027\u003eMais Info\u003c/a\u003e"}, "type": "Feature"}, {"geometry": {"coordinates": [20.22028, 49.16472], "type": "Point"}, "properties": {"description": "One of the tourist attractions in the environs of Star\u00fd Smokovec and Tatransk\u00e1 Lomnica in the High Tatras is the group of the cascaded Vodop\u00e1dy Studen\u00e9ho potoka waterfalls.\u00a0\u00a0These waterfalls are among the most frequently visited in the Tatras.", "gps": "49.16472, 20.22028", "how to go": "\u003ca type=\u0027button\u0027 href=\u0027geo:49.16472, 20.22028?q=49.16472, 20.22028\u0027 class=\u0027btn btn-success btn-sm ml-auto\u0027\u003eComo ir\u003c/a\u003e", "location": "Pre\u0161ovsk\u00fd kraj, okres Poprad, Vysok\u00e9 Tatry", "name": "Vodop\u00e1dy Studen\u00e9ho potoka waterfalls (High Tatras)", "type": " Walk\n", "url_info": "\u003ca href=\u0027http://slovakia.travel/en/vodopady-studeneho-potoka-waterfalls-high-tatras\u0027\u003eMais Info\u003c/a\u003e"}, "type": "Feature"}, {"geometry": {"coordinates": [20.49, 48.94806], "type": "Point"}, "properties": {"description": "\u010cingov - \u010eurkovec\u00a0\u00a0- Tom\u00e1\u0161ovsk\u00fd v\u00fdh\u013ead - Letanovsk\u00fd mlyn\u00a0\u00a0- Kl\u00e1\u0161torsk\u00e1 roklina-\u00fastie - Kl\u00e1\u0161torisko - Biely potok-\u00fastie - \u010cingov (5 1/4 hours)", "gps": "48.94806, 20.49", "how to go": "\u003ca type=\u0027button\u0027 href=\u0027geo:48.94806, 20.49?q=48.94806, 20.49\u0027 class=\u0027btn btn-success btn-sm ml-auto\u0027\u003eComo ir\u003c/a\u003e", "location": "Ko\u0161ick\u00fd kraj, okres Spi\u0161sk\u00e1 Nov\u00e1 Ves, Smi\u017eany", "name": "The Tom\u00e1\u0161ovsk\u00fd v\u00fdh\u013ead view - Slovensk\u00fd raj", "type": " Walk\n", "url_info": "\u003ca href=\u0027http://slovakia.travel/en/the-tomasovsky-vyhlad-view-slovensky-raj\u0027\u003eMais Info\u003c/a\u003e"}, "type": "Feature"}, {"geometry": {"coordinates": [20.50361, 48.54889], "type": "Point"}, "properties": {"description": "The abyss of Silick\u00e1 \u013eadnica is located to the south-west of the village of Silica on the plateau of Silick\u00e1 planina (National Park of Slovak Karst,\u00a022 km far from the town of Ro\u017e\u0148ava). Due to its significance and unique ornamentation, it was included into the UNESCO World Heritage List.", "gps": "48.54889, 20.50361", "how to go": "\u003ca type=\u0027button\u0027 href=\u0027geo:48.54889, 20.50361?q=48.54889, 20.50361\u0027 class=\u0027btn btn-success btn-sm ml-auto\u0027\u003eComo ir\u003c/a\u003e", "location": "Ko\u0161ick\u00fd kraj, okres Ro\u017e\u0148ava, Silica", "name": "Silick\u00e1 \u013eadnica", "type": " Cave/Walk\n", "url_info": "\u003ca href=\u0027http://slovakia.travel/en/silicka-ladnica\u0027\u003eMais Info\u003c/a\u003e"}, "type": "Feature"}, {"geometry": {"coordinates": [20.385, 48.96417], "type": "Point"}, "properties": {"description": "", "gps": "48.96417, 20.385", "how to go": "\u003ca type=\u0027button\u0027 href=\u0027geo:48.96417, 20.385?q=48.96417, 20.385\u0027 class=\u0027btn btn-success btn-sm ml-auto\u0027\u003eComo ir\u003c/a\u003e", "location": "Ko\u0161ick\u00fd kraj, okres Spi\u0161sk\u00e1 Nov\u00e1 Ves, Hrabu\u0161ice", "name": "Autocamping Podlesok *", "type": " Walk\n", "url_info": "\u003ca href=\u0027http://slovakia.travel/en/autocamping-podlesok\u0027\u003eMais Info\u003c/a\u003e"}, "type": "Feature"}], "type": "FeatureCollection"});
+            
+            geo_json_b78ec9fd74264a258bbaac0fff1b9fa5.addTo(marker_cluster_da3496723cbb4fb89af84bc41f11e052);
+            
+        
+    
+        
+        marker_cluster_da3496723cbb4fb89af84bc41f11e052
+        .bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["type", "name", "location", "gps", "description", "url_info", "how to go"];
+    let aliases = ["Tipo", "Nome", "Zona", "GPS", "Sobre", "URL", "Como ir"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    
+    return div
+    }
+    ,{"className": "foliumpopup"})
+                         
+    
+            var marker_cluster_fe814f4bc13c4b4897326deb552937cd = L.markerClusterGroup(
+                {}
+            );
+            map_421ed9449c1240bc817b20f2808fdb43.addLayer(marker_cluster_fe814f4bc13c4b4897326deb552937cd);
+        
+    
+
+        function geo_json_92dcaa52e0c34b809f8a315e21bf4e3d_onEachFeature(feature, layer) {
+            layer.on({
+                click: function(e) {
+                    
+                    layer.bindPopup(feature.properties.popupContent);
+                    
+                }
+            });
+        };
+        var geo_json_92dcaa52e0c34b809f8a315e21bf4e3d = L.geoJson(null, {
+            
+                pointToLayer: function (feature, latlng) {
+                var opts = L.AwesomeMarkers.icon({'markerColor': 'red', 'iconColor': 'white', 'icon': ' fa-university', 'prefix': 'fas', 'extraClasses': 'fa-rotate-0'});
+                
+                return L.marker(latlng, {icon:opts})
+                },
+            
+                onEachFeature: geo_json_92dcaa52e0c34b809f8a315e21bf4e3d_onEachFeature,
+            
+        }).addTo(marker_cluster_fe814f4bc13c4b4897326deb552937cd);
+            geo_json_92dcaa52e0c34b809f8a315e21bf4e3d.addData({"features": [{"geometry": {"coordinates": [20.31333, 49.06417], "type": "Point"}, "properties": {"description": "Spi\u0161sk\u00e1 Sobota is historically the biggest urban district of Poprad. Spi\u0161sk\u00e1 Sobota represents one of the best preserved medieval urban units in Slovakia.", "gps": "49.06417, 20.31333", "how to go": "\u003ca type=\u0027button\u0027 href=\u0027geo:49.06417, 20.31333?q=49.06417, 20.31333\u0027 class=\u0027btn btn-success btn-sm ml-auto\u0027\u003eComo ir\u003c/a\u003e", "location": "Pre\u0161ovsk\u00fd kraj, okres Poprad, Poprad", "name": "Spi\u0161sk\u00e1 Sobota", "type": " City\n", "url_info": "\u003ca href=\u0027http://slovakia.travel/en/spisska-sobota\u0027\u003eMais Info\u003c/a\u003e"}, "type": "Feature"}, {"geometry": {"coordinates": [20.30139, 49.05528], "type": "Point"}, "properties": {"description": "POPRAD is the main \"entrance gate\" to the mountain range of the High Tatras and the centre of the rapidly developing region.", "gps": "49.05528, 20.30139", "how to go": "\u003ca type=\u0027button\u0027 href=\u0027geo:49.05528, 20.30139?q=49.05528, 20.30139\u0027 class=\u0027btn btn-success btn-sm ml-auto\u0027\u003eComo ir\u003c/a\u003e", "location": "Pre\u0161ovsk\u00fd kraj, okres Poprad, Poprad", "name": "Poprad", "type": " City\n", "url_info": "\u003ca href=\u0027http://slovakia.travel/en/poprad\u0027\u003eMais Info\u003c/a\u003e"}, "type": "Feature"}, {"geometry": {"coordinates": [20.42944, 49.13722], "type": "Point"}, "properties": {"description": "The town KE\u017dMAROK in region Spi\u0161 has been always the centre of education in the region and the starting point for trips in the High Tatras.", "gps": "49.13722, 20.42944", "how to go": "\u003ca type=\u0027button\u0027 href=\u0027geo:49.13722, 20.42944?q=49.13722, 20.42944\u0027 class=\u0027btn btn-success btn-sm ml-auto\u0027\u003eComo ir\u003c/a\u003e", "location": "Pre\u0161ovsk\u00fd kraj, okres Ke\u017emarok, Ke\u017emarok", "name": "Ke\u017emarok", "type": " City\n", "url_info": "\u003ca href=\u0027http://slovakia.travel/en/kezmarok\u0027\u003eMais Info\u003c/a\u003e"}, "type": "Feature"}, {"geometry": {"coordinates": [20.58889, 49.02611], "type": "Point"}, "properties": {"description": "The historic town Levo\u010da, situated in the east of the \r\nSpi\u0161 region, is a true cultural and historic jewel among the Slovak \r\ntowns as it possesses a great number of architectural monuments linked \r\nwith the glorious past of the town.", "gps": "49.02611, 20.58889", "how to go": "\u003ca type=\u0027button\u0027 href=\u0027geo:49.02611, 20.58889?q=49.02611, 20.58889\u0027 class=\u0027btn btn-success btn-sm ml-auto\u0027\u003eComo ir\u003c/a\u003e", "location": "Pre\u0161ovsk\u00fd kraj, okres Levo\u010da, Levo\u010da", "name": "Levo\u010da", "type": " City\n", "url_info": "\u003ca href=\u0027http://slovakia.travel/en/levoca\u0027\u003eMais Info\u003c/a\u003e"}, "type": "Feature"}, {"geometry": {"coordinates": [21.2575, 48.72222], "type": "Point"}, "properties": {"description": "The second biggest town of Slovakia KO\u0160ICE is not only the centre of eastern Slovakia but also the core of the Eastern Carpathians where several ethnicities live.", "gps": "48.72222, 21.2575", "how to go": "\u003ca type=\u0027button\u0027 href=\u0027geo:48.72222, 21.2575?q=48.72222, 21.2575\u0027 class=\u0027btn btn-success btn-sm ml-auto\u0027\u003eComo ir\u003c/a\u003e", "location": "Ko\u0161ick\u00fd kraj, Ko\u0161ice", "name": "Ko\u0161ice", "type": " City\n", "url_info": "\u003ca href=\u0027http://slovakia.travel/en/kosice\u0027\u003eMais Info\u003c/a\u003e"}, "type": "Feature"}, {"geometry": {"coordinates": [19.6125, 49.08333], "type": "Point"}, "properties": {"description": "The administrative, cultural, economic and tourist centre of the central Liptov region is the city of LIPTOVSK\u00dd MIKUL\u00c1\u0160.", "gps": "49.08333, 19.6125", "how to go": "\u003ca type=\u0027button\u0027 href=\u0027geo:49.08333, 19.6125?q=49.08333, 19.6125\u0027 class=\u0027btn btn-success btn-sm ml-auto\u0027\u003eComo ir\u003c/a\u003e", "location": "\u017dilinsk\u00fd kraj, okres Liptovsk\u00fd Mikul\u00e1\u0161, Liptovsk\u00fd Mikul\u00e1\u0161", "name": "Liptovsk\u00fd Mikul\u00e1\u0161", "type": " City (Bajos Tatras)\n", "url_info": "\u003ca href=\u0027http://slovakia.travel/en/liptovsky-mikulas\u0027\u003eMais Info\u003c/a\u003e"}, "type": "Feature"}, {"geometry": {"coordinates": [19.6125, 49.08333], "type": "Point"}, "properties": {"description": "The administrative, cultural, economic and tourist centre of the central Liptov region is the city of LIPTOVSK\u00dd MIKUL\u00c1\u0160.", "gps": "49.08333, 19.6125", "how to go": "\u003ca type=\u0027button\u0027 href=\u0027geo:49.08333, 19.6125?q=49.08333, 19.6125\u0027 class=\u0027btn btn-success btn-sm ml-auto\u0027\u003eComo ir\u003c/a\u003e", "location": "\u017dilinsk\u00fd kraj, okres Liptovsk\u00fd Mikul\u00e1\u0161, Liptovsk\u00fd Mikul\u00e1\u0161", "name": "Liptovsk\u00fd Mikul\u00e1\u0161", "type": " City\n", "url_info": "\u003ca href=\u0027http://slovakia.travel/en/liptovsky-mikulas\u0027\u003eMais Info\u003c/a\u003e"}, "type": "Feature"}, {"geometry": {"coordinates": [20.41667, 49.39889], "type": "Point"}, "properties": {"description": "V roku 1319 daroval magister Kaka\u0161 obec\u00a0Lechnica\u00a0mn\u00edchom zo Skaly (dne\u0161n\u00e9 Kl\u00e1\u0161torisko v Slovenskom raji), aby si v bl\u00edzkej Doline sv. Antona postavili kartuzi\u00e1nsky\u00a0kl\u00e1\u0161tor. Ke\u010f\u017ee kl\u00e1\u0161torn\u00e9 budovy boli \u00fadajne postaven\u00e9 z \u010derven\u00fdch teh\u00e1l, za\u010dali ho naz\u00fdva\u0165\u00a0\u010cerven\u00fd kl\u00e1\u0161tor.", "gps": "49.39889, 20.41667", "how to go": "\u003ca type=\u0027button\u0027 href=\u0027geo:49.39889, 20.41667?q=49.39889, 20.41667\u0027 class=\u0027btn btn-success btn-sm ml-auto\u0027\u003eComo ir\u003c/a\u003e", "location": "Pre\u0161ovsk\u00fd kraj, okres Ke\u017emarok, \u010cerven\u00fd Kl\u00e1\u0161tor", "name": "\u010cerven\u00fd kl\u00e1\u0161tor", "type": " City\n", "url_info": "\u003ca href=\u0027http://slovakia.travel/cerveny-klastor\u0027\u003eMais Info\u003c/a\u003e"}, "type": "Feature"}, {"geometry": {"coordinates": [18.74194, 49.22167], "type": "Point"}, "properties": {"description": "\u017dILINA is the metropolis of the north-west of Slovakia, a town at the confluence of three rivers - the Vah, the Kysuca and the Raj\u010dianka, and the fourth biggest town of the Slovak Republic. It is the seat of the \u017dilina Self-Governing Region and a gate to the region of Horn\u00e9 Pova\u017eie.", "gps": "49.22167, 18.74194", "how to go": "\u003ca type=\u0027button\u0027 href=\u0027geo:49.22167, 18.74194?q=49.22167, 18.74194\u0027 class=\u0027btn btn-success btn-sm ml-auto\u0027\u003eComo ir\u003c/a\u003e", "location": "\u017dilinsk\u00fd kraj, okres \u017dilina, \u017dilina", "name": "\u017dilina", "type": " City\n", "url_info": "\u003ca href=\u0027http://slovakia.travel/en/zilina\u0027\u003eMais Info\u003c/a\u003e"}, "type": "Feature"}, {"geometry": {"coordinates": [19.14611, 48.73639], "type": "Point"}, "properties": {"description": "BANSK\u00c1 BYSTRICA ranks at the sixth position among the towns of \r\nSlovakia in terms of size. It is the cultural and economic centre of \r\ncentral Slovakia and seat of some institutions with nation-wide \r\ncompetencies.", "gps": "48.73639, 19.14611", "how to go": "\u003ca type=\u0027button\u0027 href=\u0027geo:48.73639, 19.14611?q=48.73639, 19.14611\u0027 class=\u0027btn btn-success btn-sm ml-auto\u0027\u003eComo ir\u003c/a\u003e", "location": "Banskobystrick\u00fd kraj, okres Bansk\u00e1 Bystrica, Bansk\u00e1 Bystrica", "name": "Bansk\u00e1 Bystrica", "type": " City\n", "url_info": "\u003ca href=\u0027http://slovakia.travel/en/banska-bystrica\u0027\u003eMais Info\u003c/a\u003e"}, "type": "Feature"}, {"geometry": {"coordinates": [20.21389, 49.13806], "type": "Point"}, "properties": {"description": "The Vysok\u00e9 Tatry \u2013 Star\u00fd Smokovec is an ideal ski area for families with children and beginners. Day and night sledding from Hriebenok is among the best winter experiences in the Tatras. ", "gps": "49.13806, 20.21389", "how to go": "\u003ca type=\u0027button\u0027 href=\u0027geo:49.13806, 20.21389?q=49.13806, 20.21389\u0027 class=\u0027btn btn-success btn-sm ml-auto\u0027\u003eComo ir\u003c/a\u003e", "location": "Pre\u0161ovsk\u00fd kraj, okres Poprad, Vysok\u00e9 Tatry", "name": "Vysok\u00e9 Tatry \u2013 Star\u00fd Smokovec", "type": " City\n", "url_info": "\u003ca href=\u0027http://slovakia.travel/en/vysoke-tatry-stary-smokovec\u0027\u003eMais Info\u003c/a\u003e"}, "type": "Feature"}, {"geometry": {"coordinates": [18.93694, 49.34639], "type": "Point"}, "properties": {"description": "", "gps": "49.34639, 18.93694", "how to go": "\u003ca type=\u0027button\u0027 href=\u0027geo:49.34639, 18.93694?q=49.34639, 18.93694\u0027 class=\u0027btn btn-success btn-sm ml-auto\u0027\u003eComo ir\u003c/a\u003e", "location": "\u017dilinsk\u00fd kraj, okres \u010cadca, Star\u00e1 Bystrica", "name": "Turistick\u00e9 centrum Pod orlojom", "type": " City (Solar Clock)\n", "url_info": "\u003ca href=\u0027http://slovakia.travel/turisticke-centrum-pod-orlojom\u0027\u003eMais Info\u003c/a\u003e"}, "type": "Feature"}], "type": "FeatureCollection"});
+            
+            geo_json_92dcaa52e0c34b809f8a315e21bf4e3d.addTo(marker_cluster_fe814f4bc13c4b4897326deb552937cd);
+            
+        
+    
+        
+        marker_cluster_fe814f4bc13c4b4897326deb552937cd
+        .bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["type", "name", "location", "gps", "description", "url_info", "how to go"];
+    let aliases = ["Tipo", "Nome", "Zona", "GPS", "Sobre", "URL", "Como ir"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    
+    return div
+    }
+    ,{"className": "foliumpopup"})
+                         
+    
+            var marker_cluster_40013a757efa42ba8702c676f66e2f87 = L.markerClusterGroup(
+                {}
+            );
+            map_421ed9449c1240bc817b20f2808fdb43.addLayer(marker_cluster_40013a757efa42ba8702c676f66e2f87);
+        
+    
+
+        function geo_json_6e798bef819741e9a0fd5b897e19c5a1_onEachFeature(feature, layer) {
+            layer.on({
+                click: function(e) {
+                    
+                    layer.bindPopup(feature.properties.popupContent);
+                    
+                }
+            });
+        };
+        var geo_json_6e798bef819741e9a0fd5b897e19c5a1 = L.geoJson(null, {
+            
+                pointToLayer: function (feature, latlng) {
+                var opts = L.AwesomeMarkers.icon({'markerColor': 'orange', 'iconColor': 'white', 'icon': ' fa-icicles', 'prefix': 'fas', 'extraClasses': 'fa-rotate-0'});
+                
+                return L.marker(latlng, {icon:opts})
+                },
+            
+                onEachFeature: geo_json_6e798bef819741e9a0fd5b897e19c5a1_onEachFeature,
+            
+        }).addTo(marker_cluster_40013a757efa42ba8702c676f66e2f87);
+            geo_json_6e798bef819741e9a0fd5b897e19c5a1.addData({"features": [{"geometry": {"coordinates": [20.47028, 48.47778], "type": "Point"}, "properties": {"description": "This cave also referred to as the \u201cPride of the Region Gemer\u201c, lies in the south-western part of the Slovensk\u00fd kras karst on the Silick\u00e1 planina plateau. As a special experience the Domica cave offers to its visitors an attractive boat trip on its underground river. Thanks to its significance and unique ornamentation, it was included into the UNESCO World Heritage List.", "gps": "48.47778, 20.47028", "how to go": "\u003ca type=\u0027button\u0027 href=\u0027geo:48.47778, 20.47028?q=48.47778, 20.47028\u0027 class=\u0027btn btn-success btn-sm ml-auto\u0027\u003eComo ir\u003c/a\u003e", "location": "Ko\u0161ick\u00fd kraj, okres Ro\u017e\u0148ava, Ke\u010dovo", "name": "Domica cave", "type": " Cave/\n", "url_info": "\u003ca href=\u0027http://slovakia.travel/en/domica-cave\u0027\u003eMais Info\u003c/a\u003e"}, "type": "Feature"}, {"geometry": {"coordinates": [20.50361, 48.54889], "type": "Point"}, "properties": {"description": "The abyss of Silick\u00e1 \u013eadnica is located to the south-west of the village of Silica on the plateau of Silick\u00e1 planina (National Park of Slovak Karst,\u00a022 km far from the town of Ro\u017e\u0148ava). Due to its significance and unique ornamentation, it was included into the UNESCO World Heritage List.", "gps": "48.54889, 20.50361", "how to go": "\u003ca type=\u0027button\u0027 href=\u0027geo:48.54889, 20.50361?q=48.54889, 20.50361\u0027 class=\u0027btn btn-success btn-sm ml-auto\u0027\u003eComo ir\u003c/a\u003e", "location": "Ko\u0161ick\u00fd kraj, okres Ro\u017e\u0148ava, Silica", "name": "Silick\u00e1 \u013eadnica", "type": " Cave/Walk\n", "url_info": "\u003ca href=\u0027http://slovakia.travel/en/silicka-ladnica\u0027\u003eMais Info\u003c/a\u003e"}, "type": "Feature"}, {"geometry": {"coordinates": [19.58167, 49.01611], "type": "Point"}, "properties": {"description": "On the right side of the valley Dem\u00e4novsk\u00e1 dolina below the northern \r\nslopes of the mountains N\u00edzke Tatry is another cave open to public - Dem\u00e4novsk\u00e1 \u013eadov\u00e1 jasky\u0148a.", "gps": "49.01611, 19.58167", "how to go": "\u003ca type=\u0027button\u0027 href=\u0027geo:49.01611, 19.58167?q=49.01611, 19.58167\u0027 class=\u0027btn btn-success btn-sm ml-auto\u0027\u003eComo ir\u003c/a\u003e", "location": "\u017dilinsk\u00fd kraj, okres Liptovsk\u00fd Mikul\u00e1\u0161, Dem\u00e4novsk\u00e1 Dolina", "name": "Dem\u00e4novsk\u00e1 \u013eadov\u00e1 jasky\u0148a cave", "type": " Cave/ Gratis\n", "url_info": "\u003ca href=\u0027http://slovakia.travel/en/demaenovska-ladova-jaskyna-cave\u0027\u003eMais Info\u003c/a\u003e"}, "type": "Feature"}, {"geometry": {"coordinates": [20.31194, 48.86333], "type": "Point"}, "properties": {"description": "Dob\u0161insk\u00e1 \u013eadov\u00e1 jasky\u0148a, le\u017eiaca v Slovenskom raji,\u00a0\u00a0patr\u00ed svojou d\u013a\u017ekou a h\u013abkou k najv\u00e4\u010d\u0161\u00edm \u013eadov\u00fdm jaskyniam v Eur\u00f3pe.\r\n Nikde mimo alpskej oblasti sa v Eur\u00f3pe nenach\u00e1dza to\u013eko \u013eadu s hr\u00fabkou \r\nmiestami v\u00e4\u010d\u0161ou ako 25 m. V\u010faka svojmu v\u00fdznamu a unik\u00e1tnej v\u00fdzdobe bola \r\nzaraden\u00e1 do Zoznamu svetov\u00e9ho dedi\u010dstva UNESCO.", "gps": "48.86333, 20.31194", "how to go": "\u003ca type=\u0027button\u0027 href=\u0027geo:48.86333, 20.31194?q=48.86333, 20.31194\u0027 class=\u0027btn btn-success btn-sm ml-auto\u0027\u003eComo ir\u003c/a\u003e", "location": "Ko\u0161ick\u00fd kraj, okres Ro\u017e\u0148ava, Dob\u0161in\u00e1", "name": "Dob\u0161insk\u00e1 \u013eadov\u00e1 jasky\u0148a", "type": " Cave (Ice Cave)\n", "url_info": "\u003ca href=\u0027http://slovakia.travel/dobsinska-ladova-jaskyna\u0027\u003eMais Info\u003c/a\u003e"}, "type": "Feature"}, {"geometry": {"coordinates": [19.04, 48.81389], "type": "Point"}, "properties": {"description": "The Harmaneck\u00e1 jasky\u0148a cave is situated in the Ve\u013ek\u00e1 Fatra Mts.\u00a0The cave is known for occurrence of rare white soft sinter, tall pagodas and sinter lakes.", "gps": "48.81389, 19.04", "how to go": "\u003ca type=\u0027button\u0027 href=\u0027geo:48.81389, 19.04?q=48.81389, 19.04\u0027 class=\u0027btn btn-success btn-sm ml-auto\u0027\u003eComo ir\u003c/a\u003e", "location": "Banskobystrick\u00fd kraj, okres Bansk\u00e1 Bystrica, Doln\u00fd Harmanec", "name": "Harmaneck\u00e1 jasky\u0148a cave", "type": " Cave (Rare White Soft Sinter)\n", "url_info": "\u003ca href=\u0027http://slovakia.travel/en/harmanecka-jaskyna-cave\u0027\u003eMais Info\u003c/a\u003e"}, "type": "Feature"}], "type": "FeatureCollection"});
+            
+            geo_json_6e798bef819741e9a0fd5b897e19c5a1.addTo(marker_cluster_40013a757efa42ba8702c676f66e2f87);
+            
+        
+    
+        
+        marker_cluster_40013a757efa42ba8702c676f66e2f87
+        .bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["type", "name", "location", "gps", "description", "url_info", "how to go"];
+    let aliases = ["Tipo", "Nome", "Zona", "GPS", "Sobre", "URL", "Como ir"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    
+    return div
+    }
+    ,{"className": "foliumpopup"})
+                         
+    
+            var marker_cluster_7bc4c474a4b543c592204d611e139fac = L.markerClusterGroup(
+                {}
+            );
+            map_421ed9449c1240bc817b20f2808fdb43.addLayer(marker_cluster_7bc4c474a4b543c592204d611e139fac);
+        
+    
+
+        function geo_json_21369ffc6d1342468ed23ea7e7d79d52_onEachFeature(feature, layer) {
+            layer.on({
+                click: function(e) {
+                    
+                    layer.bindPopup(feature.properties.popupContent);
+                    
+                }
+            });
+        };
+        var geo_json_21369ffc6d1342468ed23ea7e7d79d52 = L.geoJson(null, {
+            
+                pointToLayer: function (feature, latlng) {
+                var opts = L.AwesomeMarkers.icon({'markerColor': 'darkgreen', 'iconColor': 'white', 'icon': ' fa-tree', 'prefix': 'fas', 'extraClasses': 'fa-rotate-0'});
+                
+                return L.marker(latlng, {icon:opts})
+                },
+            
+                onEachFeature: geo_json_21369ffc6d1342468ed23ea7e7d79d52_onEachFeature,
+            
+        }).addTo(marker_cluster_7bc4c474a4b543c592204d611e139fac);
+            geo_json_21369ffc6d1342468ed23ea7e7d79d52.addData({"features": [{"geometry": {"coordinates": [19.275, 48.76722], "type": "Point"}, "properties": {"description": "The region of Bansk\u00e1 Bystrica is very interesting because of manifold geological structure that is the cause of diversified relief in this part of Slovakia also because of raw materials resources, especially ores.", "gps": "48.76722, 19.275", "how to go": "\u003ca type=\u0027button\u0027 href=\u0027geo:48.76722, 19.275?q=48.76722, 19.275\u0027 class=\u0027btn btn-success btn-sm ml-auto\u0027\u003eComo ir\u003c/a\u003e", "location": "Banskobystrick\u00fd kraj, okres Bansk\u00e1 Bystrica, Slovensk\u00e1 \u013dup\u010da", "name": "Bansk\u00e1 Bystrica Geopark", "type": " Park/ Geopark\n", "url_info": "\u003ca href=\u0027http://slovakia.travel/en/banska-bystrica-geopark\u0027\u003eMais Info\u003c/a\u003e"}, "type": "Feature"}, {"geometry": {"coordinates": [19.01972, 49.19944], "type": "Point"}, "properties": {"description": "The National Park of Mal\u00e1 Fatra is situated in the westernmost Slovak high mountains Mal\u00e1 Fatra. Gorges, rock peaks and an attractive ridge tour are among its attractions.", "gps": "49.19944, 19.01972", "how to go": "\u003ca type=\u0027button\u0027 href=\u0027geo:49.19944, 19.01972?q=49.19944, 19.01972\u0027 class=\u0027btn btn-success btn-sm ml-auto\u0027\u003eComo ir\u003c/a\u003e", "location": "\u017dilinsk\u00fd kraj, okres \u017dilina, Terchov\u00e1", "name": "National Park of Mal\u00e1 Fatra", "type": " Park/ Geopark\n", "url_info": "\u003ca href=\u0027http://slovakia.travel/en/national-park-of-mala-fatra\u0027\u003eMais Info\u003c/a\u003e"}, "type": "Feature"}, {"geometry": {"coordinates": [19.82417, 48.27194], "type": "Point"}, "properties": {"description": "The area of the Novograd-N\u00f3gr\u00e1d UNESCO Global Geopark is landlocked and dominated by hills, divided by valleys and basins. The area\u0027s varied history is reflected in a unique landscape. Several of its geological and geomorphological attractions also provide remarkable image of the country.", "gps": "48.27194, 19.82417", "how to go": "\u003ca type=\u0027button\u0027 href=\u0027geo:48.27194, 19.82417?q=48.27194, 19.82417\u0027 class=\u0027btn btn-success btn-sm ml-auto\u0027\u003eComo ir\u003c/a\u003e", "location": "Banskobystrick\u00fd kraj, okres Lu\u010denec, Fi\u013eakovo", "name": "Novohrad Geopark", "type": " Park/ Geopark\n", "url_info": "\u003ca href=\u0027http://slovakia.travel/en/novohrad-geopark\u0027\u003eMais Info\u003c/a\u003e"}, "type": "Feature"}, {"geometry": {"coordinates": [18.34111, 48.46389], "type": "Point"}, "properties": {"description": "There is only one place in Slovakia, hidden in beautiful oak forests \r\nsurrounding the community of Topo\u013e\u010dianky, where one can see Europe\u00b4s largest mammal, the European bison, \"a\u00a0close relative\" of more known, the North American buffalo.", "gps": "48.46389, 18.34111", "how to go": "\u003ca type=\u0027button\u0027 href=\u0027geo:48.46389, 18.34111?q=48.46389, 18.34111\u0027 class=\u0027btn btn-success btn-sm ml-auto\u0027\u003eComo ir\u003c/a\u003e", "location": "Nitriansky kraj, okres Zlat\u00e9 Moravce, Hos\u0165ovce", "name": "Topo\u013e\u010dianky Bison Park", "type": " Park/ Geopark\n", "url_info": "\u003ca href=\u0027http://slovakia.travel/en/topolcianky-bison-park\u0027\u003eMais Info\u003c/a\u003e"}, "type": "Feature"}, {"geometry": {"coordinates": [20.08111, 49.15222], "type": "Point"}, "properties": {"description": "The oldest of our protected areas, the National Park of Tatras\r\n (TANAP) in the north of Slovakia, was founded in 1949. It covers the \r\nhigh-mountain area of the Tatras and it is the unique protected area of \r\nflora and fauna among the tallest European high mountains situated north of the Alps.", "gps": "49.15222, 20.08111", "how to go": "\u003ca type=\u0027button\u0027 href=\u0027geo:49.15222, 20.08111?q=49.15222, 20.08111\u0027 class=\u0027btn btn-success btn-sm ml-auto\u0027\u003eComo ir\u003c/a\u003e", "location": "Pre\u0161ovsk\u00fd kraj, okres Poprad, Vysok\u00e9 Tatry", "name": "National Park of High Tatras", "type": " Park/ Geopark\n", "url_info": "\u003ca href=\u0027http://slovakia.travel/en/national-park-of-high-tatras\u0027\u003eMais Info\u003c/a\u003e"}, "type": "Feature"}], "type": "FeatureCollection"});
+            
+            geo_json_21369ffc6d1342468ed23ea7e7d79d52.addTo(marker_cluster_7bc4c474a4b543c592204d611e139fac);
+            
+        
+    
+        
+        marker_cluster_7bc4c474a4b543c592204d611e139fac
+        .bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["type", "name", "location", "gps", "description", "url_info", "how to go"];
+    let aliases = ["Tipo", "Nome", "Zona", "GPS", "Sobre", "URL", "Como ir"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    
+    return div
+    }
+    ,{"className": "foliumpopup"})
+                         
+    
+            var tile_layer_8d5972096ec04ca49f07b488d4584c0e = L.tileLayer(
+                "OpenStreepMap",
+                {"attribution": "OSM", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_421ed9449c1240bc817b20f2808fdb43);
+        
+    
+            var tile_layer_5daaff0d0a0942779fca601cb2f562e4 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_421ed9449c1240bc817b20f2808fdb43);
+        
+    
+            var choropleth_e3c13da09b47492baccb92602852293e = L.featureGroup(
+                {}
+            ).addTo(map_421ed9449c1240bc817b20f2808fdb43);
+        
+    
+        function geo_json_2ba0c18f603f40f586f7225aae9c64ba_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "white", "fillColor": "blue", "fillOpacity": 0, "opacity": 1, "weight": 1};
+            }
+        }
+
+        function geo_json_2ba0c18f603f40f586f7225aae9c64ba_onEachFeature(feature, layer) {
+            layer.on({
+                click: function(e) {
+                    
+                    map_421ed9449c1240bc817b20f2808fdb43.fitBounds(e.target.getBounds());
+                    
+                }
+            });
+        };
+        var geo_json_2ba0c18f603f40f586f7225aae9c64ba = L.geoJson(null, {
+            
+                onEachFeature: geo_json_2ba0c18f603f40f586f7225aae9c64ba_onEachFeature,
+            
+                style: geo_json_2ba0c18f603f40f586f7225aae9c64ba_styler,
+        }).addTo(choropleth_e3c13da09b47492baccb92602852293e);
+            geo_json_2ba0c18f603f40f586f7225aae9c64ba.addData({"features": [{"geometry": {"coordinates": [[[18.853144, 49.49623], [18.909575, 49.435846], [19.320713, 49.571574], [19.825023, 49.217125], [20.415839, 49.431453], [20.887955, 49.328772], [21.607808, 49.470107], [22.558138, 49.085738], [22.280842, 48.825392], [22.085608, 48.422264], [21.872236, 48.319971], [20.801294, 48.623854], [20.473562, 48.56285], [20.239054, 48.327567], [19.769471, 48.202691], [19.661364, 48.266615], [19.174365, 48.111379], [18.777025, 48.081768], [18.696513, 47.880954], [17.857133, 47.758429], [17.488473, 47.867466], [16.979667, 48.123497], [16.879983, 48.470013], [16.960288, 48.596982], [17.101985, 48.816969], [17.545007, 48.800019], [17.886485, 48.903475], [17.913512, 48.996493], [18.104973, 49.043983], [18.170498, 49.271515], [18.399994, 49.315001], [18.554971, 49.495015], [18.853144, 49.49623]]], "type": "Polygon"}, "id": "SVK", "properties": {"name": "Slovakia"}, "type": "Feature"}], "type": "FeatureCollection"});
+            
+        
+    
+            var layer_control_7d2f17bf9d494eb7992ba0ae54674bd6 = {
+                base_layers : {
+                    "cartodbdark_matter" : tile_layer_73f08c90b1f64b8f96be48a01fc9be9e,
+                    "OSM" : tile_layer_8d5972096ec04ca49f07b488d4584c0e,
+                    "Terrain" : tile_layer_5daaff0d0a0942779fca601cb2f562e4,
+                },
+                overlays :  {
+                    "Castles" : marker_cluster_b9b8724d7cfe431c890db441da6c187f,
+                    "Walks" : marker_cluster_da3496723cbb4fb89af84bc41f11e052,
+                    "Cities" : marker_cluster_fe814f4bc13c4b4897326deb552937cd,
+                    "Caves" : marker_cluster_40013a757efa42ba8702c676f66e2f87,
+                    "National Parks | GeoParks" : marker_cluster_7bc4c474a4b543c592204d611e139fac,
+                    "Boarders" : choropleth_e3c13da09b47492baccb92602852293e,
+                },
+            };
+            L.control.layers(
+                layer_control_7d2f17bf9d494eb7992ba0ae54674bd6.base_layers,
+                layer_control_7d2f17bf9d494eb7992ba0ae54674bd6.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_421ed9449c1240bc817b20f2808fdb43);
+            tile_layer_8d5972096ec04ca49f07b488d4584c0e.remove();
+            tile_layer_5daaff0d0a0942779fca601cb2f562e4.remove();
+        
+</script>
